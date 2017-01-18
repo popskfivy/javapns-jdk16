@@ -1,10 +1,16 @@
 package javapns.devices.implementations.basic;
 
-import java.sql.*;
-import java.util.*;
+import javapns.devices.Device;
+import javapns.devices.DeviceFactory;
+import javapns.devices.exceptions.DuplicateDeviceException;
+import javapns.devices.exceptions.NullDeviceTokenException;
+import javapns.devices.exceptions.NullIdException;
+import javapns.devices.exceptions.UnknownDeviceException;
 
-import javapns.devices.*;
-import javapns.devices.exceptions.*;
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * This class implements an in-memory DeviceFactory (backed by a Map).

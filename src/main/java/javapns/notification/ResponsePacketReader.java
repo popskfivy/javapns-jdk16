@@ -1,8 +1,11 @@
 package javapns.notification;
 
-import java.io.*;
-import java.net.*;
-import java.util.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+import java.util.List;
+import java.util.Map;
+import java.util.Vector;
 
 /**
  * Class for reading response packets from an APNS connection.

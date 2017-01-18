@@ -1,6 +1,6 @@
 package javapns.notification.management;
 
-import org.json.*;
+import org.json.JSONException;
 
 /**
  * An MDM payload for Restrictions.

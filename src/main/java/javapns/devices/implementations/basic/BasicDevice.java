@@ -1,9 +1,9 @@
 package javapns.devices.implementations.basic;
 
-import java.sql.*;
+import javapns.devices.Device;
+import javapns.devices.exceptions.InvalidDeviceTokenFormatException;
 
-import javapns.devices.*;
-import javapns.devices.exceptions.*;
+import java.sql.Timestamp;
 
 /**
  * This class is used to represent a Device (iPhone)

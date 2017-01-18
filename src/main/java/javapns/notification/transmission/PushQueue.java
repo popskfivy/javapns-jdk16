@@ -1,10 +1,12 @@
 package javapns.notification.transmission;
 
-import java.util.*;
+import javapns.devices.Device;
+import javapns.devices.exceptions.InvalidDeviceTokenFormatException;
+import javapns.notification.Payload;
+import javapns.notification.PayloadPerDevice;
+import javapns.notification.PushedNotifications;
 
-import javapns.devices.*;
-import javapns.devices.exceptions.*;
-import javapns.notification.*;
+import java.util.List;
 
 /**
  * A queue backed by an asynchronous notification thread or threads.

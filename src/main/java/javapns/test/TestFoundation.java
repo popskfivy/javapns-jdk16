@@ -1,9 +1,9 @@
 package javapns.test;
 
-import javapns.communication.*;
-import javapns.notification.*;
-
-import org.apache.log4j.*;
+import javapns.communication.KeystoreManager;
+import javapns.notification.AppleNotificationServer;
+import javapns.notification.AppleNotificationServerBasicImpl;
+import org.apache.log4j.BasicConfigurator;
 
 class TestFoundation {
 

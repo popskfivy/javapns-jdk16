@@ -1,10 +1,11 @@
 package javapns.test;
 
-import java.util.*;
+import javapns.Push;
+import javapns.communication.exceptions.CommunicationException;
+import javapns.communication.exceptions.KeystoreException;
+import javapns.devices.Device;
 
-import javapns.*;
-import javapns.communication.exceptions.*;
-import javapns.devices.*;
+import java.util.List;
 
 /**
  * A command-line test facility for the Feedback Service.

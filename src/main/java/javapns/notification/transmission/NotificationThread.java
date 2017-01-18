@@ -1,11 +1,14 @@
 package javapns.notification.transmission;
 
-import java.util.*;
-
-import javapns.communication.exceptions.*;
-import javapns.devices.*;
-import javapns.devices.exceptions.*;
+import javapns.communication.exceptions.CommunicationException;
+import javapns.communication.exceptions.KeystoreException;
+import javapns.devices.Device;
+import javapns.devices.Devices;
+import javapns.devices.exceptions.InvalidDeviceTokenFormatException;
 import javapns.notification.*;
+
+import java.util.List;
+import java.util.Vector;
 
 /**
  * <h1>Pushes payloads asynchroneously using a dedicated thread.</h1>

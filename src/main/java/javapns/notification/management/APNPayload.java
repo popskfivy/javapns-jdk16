@@ -1,8 +1,9 @@
 package javapns.notification.management;
 
-import java.util.*;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-import org.json.*;
+import java.util.Map;
 
 /**
  * An MDM payload for APN (Access Point Name).

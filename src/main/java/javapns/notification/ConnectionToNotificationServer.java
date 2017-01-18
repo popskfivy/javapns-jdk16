@@ -1,9 +1,9 @@
 package javapns.notification;
 
-import java.security.*;
+import javapns.communication.ConnectionToAppleServer;
+import javapns.communication.exceptions.KeystoreException;
 
-import javapns.communication.*;
-import javapns.communication.exceptions.*;
+import java.security.KeyStore;
 
 /**
  * Connection details specific to the Notification Service.

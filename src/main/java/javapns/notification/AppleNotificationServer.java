@@ -1,6 +1,6 @@
 package javapns.notification;
 
-import javapns.communication.*;
+import javapns.communication.AppleServer;
 
 /**
  * Interface representing a connection to an Apple Notification Server

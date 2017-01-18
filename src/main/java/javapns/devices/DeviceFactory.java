@@ -1,6 +1,9 @@
 package javapns.devices;
 
-import javapns.devices.exceptions.*;
+import javapns.devices.exceptions.DuplicateDeviceException;
+import javapns.devices.exceptions.NullDeviceTokenException;
+import javapns.devices.exceptions.NullIdException;
+import javapns.devices.exceptions.UnknownDeviceException;
 
 /**
  * This is the common interface for all DeviceFactories.

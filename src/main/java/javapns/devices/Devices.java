@@ -1,9 +1,11 @@
 package javapns.devices;
 
-import java.util.*;
+import javapns.devices.implementations.basic.BasicDevice;
+import javapns.notification.PayloadPerDevice;
 
-import javapns.devices.implementations.basic.*;
-import javapns.notification.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Vector;
 
 public class Devices {
 

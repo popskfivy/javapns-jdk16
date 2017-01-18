@@ -1,6 +1,6 @@
 package javapns.devices;
 
-import java.sql.*;
+import java.sql.Timestamp;
 
 /**
  * This is the common interface for all Devices.

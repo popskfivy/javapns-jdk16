@@ -1,16 +1,20 @@
 package javapns.feedback;
 
-import java.io.*;
-import java.sql.*;
-import java.util.*;
+import javapns.communication.exceptions.CommunicationException;
+import javapns.communication.exceptions.KeystoreException;
+import javapns.devices.Device;
+import javapns.devices.DeviceFactory;
+import javapns.devices.implementations.basic.BasicDevice;
+import javapns.devices.implementations.basic.BasicDeviceFactory;
+import org.apache.log4j.Logger;
 
-import javapns.communication.exceptions.*;
-import javapns.devices.*;
-import javapns.devices.implementations.basic.*;
-
-import javax.net.ssl.*;
-
-import org.apache.log4j.*;
+import javax.net.ssl.SSLSocket;
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Timestamp;
+import java.util.LinkedList;
 
 /**
  * Class for interacting with a specific Feedback Service. 

@@ -1,8 +1,9 @@
 package javapns.communication;
 
-import java.io.*;
+import javapns.communication.exceptions.InvalidKeystoreReferenceException;
+import javapns.communication.exceptions.KeystoreException;
 
-import javapns.communication.exceptions.*;
+import java.io.InputStream;
 
 /**
  * A basic and abstract implementation of the AppleServer interface

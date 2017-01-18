@@ -1,8 +1,8 @@
 package javapns.communication;
 
-import java.security.cert.*;
-
-import javax.net.ssl.*;
+import javax.net.ssl.X509TrustManager;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 
 /**
  * A trust manager that automatically trusts all servers.

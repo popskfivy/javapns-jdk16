@@ -1,8 +1,8 @@
 package javapns.communication;
 
-import java.io.*;
+import javapns.communication.exceptions.InvalidKeystoreReferenceException;
 
-import javapns.communication.exceptions.*;
+import java.io.InputStream;
 
 /**
  * Common interface of all classes representing a connection to any Apple server.

@@ -1,23 +1,29 @@
 package javapns.notification;
 
-import java.io.*;
-import java.net.*;
-import java.nio.*;
-import java.security.cert.Certificate;
-import java.text.*;
-import java.util.*;
-
-import javapns.communication.*;
-import javapns.communication.exceptions.*;
-import javapns.devices.*;
+import javapns.communication.ConnectionToAppleServer;
+import javapns.communication.exceptions.CommunicationException;
+import javapns.communication.exceptions.InvalidCertificateChainException;
+import javapns.communication.exceptions.KeystoreException;
+import javapns.devices.Device;
+import javapns.devices.DeviceFactory;
 import javapns.devices.exceptions.*;
-import javapns.devices.implementations.basic.*;
-import javapns.notification.exceptions.*;
+import javapns.devices.implementations.basic.BasicDevice;
+import javapns.devices.implementations.basic.BasicDeviceFactory;
+import javapns.notification.exceptions.PayloadIsEmptyException;
+import org.apache.log4j.Logger;
 
-import javax.net.ssl.*;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.SSLSocket;
 import javax.security.cert.X509Certificate;
-
-import org.apache.log4j.*;
+import java.io.*;
+import java.net.Socket;
+import java.nio.ByteBuffer;
+import java.security.cert.Certificate;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * The main class used to send notification and handle a connection to Apple SSLServerSocket.
@@ -790,7 +796,7 @@ public class PushNotificationManager {
 
 		/* Device token (shortened), Identifier and expiry */
 		int l = useEnhancedNotificationFormat ? 4 : 8;
-		alert.append("" + deviceToken.substring(0, l) + "É" + deviceToken.substring(64 - l, 64) + (useEnhancedNotificationFormat ? " [Id:" + identifier + "] " + (payload.getExpiry() <= 0 ? "No-store" : "Exp:T+" + payload.getExpiry()) : "") + "\n");
+		alert.append("" + deviceToken.substring(0, l) + "ï¿½" + deviceToken.substring(64 - l, 64) + (useEnhancedNotificationFormat ? " [Id:" + identifier + "] " + (payload.getExpiry() <= 0 ? "No-store" : "Exp:T+" + payload.getExpiry()) : "") + "\n");
 
 		/* Format & encoding */
 		alert.append((useEnhancedNotificationFormat ? "Enhanced" : "Simple") + " format / " + payload.getCharacterEncoding() + "" + "");

@@ -1,10 +1,11 @@
 package javapns.notification.transmission;
 
-import java.util.*;
-
-import javapns.devices.*;
-import javapns.devices.exceptions.*;
+import javapns.devices.Device;
+import javapns.devices.exceptions.InvalidDeviceTokenFormatException;
 import javapns.notification.*;
+
+import java.util.List;
+import java.util.Vector;
 
 /**
  * <h1>Pushes a payload to a large number of devices using multiple threads</h1>

@@ -1,12 +1,17 @@
 package javapns.communication;
 
-import java.io.*;
-import java.security.*;
-import java.security.cert.*;
-import java.security.cert.Certificate;
-import java.util.*;
+import javapns.communication.exceptions.InvalidKeystoreFormatException;
+import javapns.communication.exceptions.InvalidKeystorePasswordException;
+import javapns.communication.exceptions.InvalidKeystoreReferenceException;
+import javapns.communication.exceptions.KeystoreException;
 
-import javapns.communication.exceptions.*;
+import java.io.*;
+import java.security.KeyStore;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateExpiredException;
+import java.security.cert.CertificateNotYetValidException;
+import java.security.cert.X509Certificate;
+import java.util.Enumeration;
 
 /**
  * Class responsible for dealing with keystores.

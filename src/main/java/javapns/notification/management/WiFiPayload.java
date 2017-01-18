@@ -1,6 +1,7 @@
 package javapns.notification.management;
 
-import org.json.*;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * An MDM payload for Wi-Fi.

@@ -1,10 +1,10 @@
 package javapns.feedback;
 
-import java.security.*;
+import javapns.communication.ConnectionToAppleServer;
+import javapns.communication.exceptions.KeystoreException;
+import javapns.notification.AppleNotificationServer;
 
-import javapns.communication.*;
-import javapns.communication.exceptions.*;
-import javapns.notification.*;
+import java.security.KeyStore;
 
 /**
  * Class representing a connection to a specific Feedback Server.

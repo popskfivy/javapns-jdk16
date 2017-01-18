@@ -1,9 +1,10 @@
 package javapns.notification;
 
-import java.util.*;
+import javapns.devices.Device;
+import javapns.notification.exceptions.ErrorResponsePacketReceivedException;
 
-import javapns.devices.*;
-import javapns.notification.exceptions.*;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * <p>An object representing the result of a push notification to a specific payload to a single device.</p>

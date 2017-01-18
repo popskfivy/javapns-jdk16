@@ -1,6 +1,6 @@
 package javapns.notification.exceptions;
 
-import javapns.notification.*;
+import javapns.notification.ResponsePacket;
 
 /**
  * Thrown when an error response packet was received from an APNS server.

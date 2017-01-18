@@ -1,14 +1,21 @@
 package javapns;
 
-import java.util.*;
-
-import javapns.communication.exceptions.*;
-import javapns.devices.*;
-import javapns.devices.exceptions.*;
-import javapns.devices.implementations.basic.*;
-import javapns.feedback.*;
+import javapns.communication.exceptions.CommunicationException;
+import javapns.communication.exceptions.KeystoreException;
+import javapns.devices.Device;
+import javapns.devices.Devices;
+import javapns.devices.exceptions.InvalidDeviceTokenFormatException;
+import javapns.devices.implementations.basic.BasicDevice;
+import javapns.feedback.AppleFeedbackServer;
+import javapns.feedback.AppleFeedbackServerBasicImpl;
+import javapns.feedback.FeedbackServiceManager;
 import javapns.notification.*;
-import javapns.notification.transmission.*;
+import javapns.notification.transmission.NotificationThread;
+import javapns.notification.transmission.NotificationThreads;
+import javapns.notification.transmission.PushQueue;
+
+import java.util.List;
+import java.util.Vector;
 
 /**
  * <p>Main class for easily interacting with the Apple Push Notification System</p>

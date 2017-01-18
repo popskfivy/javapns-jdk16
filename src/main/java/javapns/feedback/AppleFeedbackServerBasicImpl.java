@@ -1,7 +1,8 @@
 package javapns.feedback;
 
-import javapns.communication.*;
-import javapns.communication.exceptions.*;
+import javapns.communication.AppleServerBasicImpl;
+import javapns.communication.ConnectionToAppleServer;
+import javapns.communication.exceptions.KeystoreException;
 
 /**
  * Basic implementation of the AppleFeedbackServer interface,

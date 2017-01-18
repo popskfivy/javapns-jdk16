@@ -1,8 +1,8 @@
 package javapns.notification;
 
-import javapns.devices.*;
-import javapns.devices.exceptions.*;
-import javapns.devices.implementations.basic.*;
+import javapns.devices.Device;
+import javapns.devices.exceptions.InvalidDeviceTokenFormatException;
+import javapns.devices.implementations.basic.BasicDevice;
 
 /**
  * A one-to-one link between a payload and device.

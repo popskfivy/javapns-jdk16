@@ -1,8 +1,8 @@
 package javapns.notification.management;
 
-import javapns.notification.*;
-
-import org.json.*;
+import javapns.notification.Payload;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * A payload template compatible with Apple Mobile Device Management's Config Payload specification (beta version).

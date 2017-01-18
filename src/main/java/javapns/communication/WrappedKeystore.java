@@ -1,7 +1,8 @@
 package javapns.communication;
 
-import java.io.*;
-import java.security.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.KeyStore;
 
 /**
  * Special wrapper for a KeyStore.
